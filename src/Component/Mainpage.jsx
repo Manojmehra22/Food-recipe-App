@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Mealcards from "./Mealcards.jsx";
+import background from "/bgImage1.avif";
 
 const Mainpage = () => {
   const [data, setData] = useState([]);
@@ -25,8 +26,18 @@ const Mainpage = () => {
   };
   // console.log(data);
 
+  const myStyle = {
+    backgroundImage: `url(${background})`,
+    height: "100vh",
+    width: "100vw",
+    marginTop: "-70px",
+    // fontsize: "50px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <>
+    <div className="box" style={myStyle}>
       <h1 className="head">FOOD RECIPE E-BOOK</h1>
       <div className="container">
         <div className="searchbar">
@@ -38,7 +49,7 @@ const Mainpage = () => {
           <Mealcards detail={data} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

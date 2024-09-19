@@ -11,12 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.box {
+  padding-top: 100px;
+}
 
 .searchbar {
   display: flex;
   justify-content: center;
+
   gap: 7px;
-  margin-top: 22px;
 }
 .searchbar input {
   width: 400px;
@@ -36,7 +39,7 @@ code {
 }
 .head {
   text-align: center;
-  color: #7b00f7;
+  color: orange;
   font-size: 20px;
   font-weight: 500px;
   margin-top: 70px;
@@ -90,13 +93,14 @@ code {
 }
 .mealInfo {
   /* width: 90%; */
-  height: 90vh;
+
   margin: auto;
   display: flex;
   gap: 22px;
   justify-content: center;
   align-items: center;
   background-color: #7b00f7;
+  height: 100vh;
   padding: 32px;
   color: white;
 }
@@ -117,7 +121,7 @@ code {
     padding-right: 10px; */
     font-size: 20px;
     font-weight: 500;
-    color: #7b00f7;
+    color: orange;
     margin-top: 70px;
   }
   .searchbar {
