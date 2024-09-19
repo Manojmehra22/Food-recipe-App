@@ -111,7 +111,7 @@ code {
 .mealInfo .info {
   margin-top: -112px;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 350px) {
   .head {
     /* padding-left: 10px;
     padding-right: 10px; */
