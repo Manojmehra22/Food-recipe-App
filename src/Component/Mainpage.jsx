@@ -30,7 +30,7 @@ const Mainpage = () => {
     backgroundImage: `url(${background})`,
     height: "100vh",
     width: "100vw",
-    marginTop: "-70px",
+    // marginTop: "-70px",
     // fontsize: "50px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -38,7 +38,7 @@ const Mainpage = () => {
 
   return (
     <div className="box" style={myStyle}>
-      <h1 className="head">FOOD RECIPE E-BOOK</h1>
+      <h1 className="head" style={{ paddingTop: "50px" }}>FOOD RECIPE E-BOOK</h1>
       <div className="container">
         <div className="searchbar">
           <input type="text" placeholder="Enter Dishe" onChange={handleInput} />
